@@ -1,0 +1,4 @@
+18:37:44.047 [main] INFO  resources.base - the displayed tariffs provide at least 100 Mbit/s download speed
+18:38:04.770 [main] INFO  resources.base - Verify that the final weitere Tarife laden button displays the expected number of tariffs remaining
+18:38:06.987 [main] INFO  resources.base - The total number of tariffs displayed matches the total listed in the Ermittelte Tarife section
+18:38:07.148 [main] INFO  resources.base - the weitere Tarife laden button is no longer displayed when all the tariffs are visible

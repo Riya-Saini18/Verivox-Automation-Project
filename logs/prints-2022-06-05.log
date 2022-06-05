@@ -1,0 +1,5 @@
+18:23:19.815 [main] INFO  resources.base - returning street names with special characters and dashes displayed correctly
+18:23:19.816 [main] INFO  resources.base - Verified the streets for each of the postcode 77716 cities
+18:23:20.180 [main] INFO  resources.base - returning street names with special characters and dashes displayed correctly
+18:23:20.180 [main] INFO  resources.base - Verified the streets for each of the postcode 77716 cities
+18:23:20.468 [main] INFO  resources.base - returns a list of cities (even for a single city)

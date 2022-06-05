@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.AddressChecks" class="method navigator-link" hash-for-method="findTheCitiesForAGivenPostcode(10409, [Berlin])">findTheCitiesForAGivenPostcode(10409, [Berlin])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.AddressChecks" class="method navigator-link" hash-for-method="findTheCitiesForAGivenPostcode(77716, [Fischerbach, Haslach, Hofstetten])">findTheCitiesForAGivenPostcode(77716, [Fischerbach, Haslach, Hofstetten])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.StreetsCheck" class="method navigator-link" hash-for-method="findTheStreetsForAGivenPostcode(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str....)">findTheStreetsForAGivenPostcode(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.StreetsCheck" class="method navigator-link" hash-for-method="findTheStreetsForAGivenPostcode(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-U...)">findTheStreetsForAGivenPostcode(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-U...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.StreetsCheck" class="method navigator-link" hash-for-method="findTheStreetsForAGivenPostcode(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breit...)">findTheStreetsForAGivenPostcode(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.StreetsCheck" class="method navigator-link" hash-for-method="findTheStreetsForAGivenPostcode(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Gre...)">findTheStreetsForAGivenPostcode(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Gre...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.HomePage" class="method navigator-link" hash-for-method="loadMultipleTariffResultPages">loadMultipleTariffResultPages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="verivox.HomePage" class="method navigator-link" hash-for-method="verifyTheDslCalculator">verifyTheDslCalculator</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">verivox.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadMultipleTariffResultPages">
+                  </a> <!-- loadMultipleTariffResultPages -->
+                  <span class="method-name">loadMultipleTariffResultPages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheDslCalculator">
+                  </a> <!-- verifyTheDslCalculator -->
+                  <span class="method-name">verifyTheDslCalculator</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">verivox.AddressChecks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheCitiesForAGivenPostcode(10409, [Berlin])">
+                  </a> <!-- findTheCitiesForAGivenPostcode(10409, [Berlin]) -->
+                  <span class="method-name">findTheCitiesForAGivenPostcode</span>
+                  <span class="parameters">(10409, [Berlin])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheCitiesForAGivenPostcode(77716, [Fischerbach, Haslach, Hofstetten])">
+                  </a> <!-- findTheCitiesForAGivenPostcode(77716, [Fischerbach, Haslach, Hofstetten]) -->
+                  <span class="method-name">findTheCitiesForAGivenPostcode</span>
+                  <span class="parameters">(77716, [Fischerbach, Haslach, Hofstetten])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">verivox.StreetsCheck</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheStreetsForAGivenPostcode(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str....)">
+                  </a> <!-- findTheStreetsForAGivenPostcode(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str....) -->
+                  <span class="method-name">findTheStreetsForAGivenPostcode</span>
+                  <span class="parameters">(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str., Am Dorfbach, Am Gewerbekanal, Am Helgenberg, Am Marktplatz, Am Mühlbach, Am Schafsteg, Am Schänzle, Am Schloßberg, Am Sonnenrain, Am Spielplatz, Bachgasse, Bächlewaldweg, Baumeisterstr., Beethovenstr., Bergstr., Birkenstr., Bohnackerstr., Bollenbacher Str., Breitestr., Bruno-Lenz-Str., Buchenstr., Dorfstr., Dr.-Kempf-Str., Eichenbachstr., Eichenweg, Engelstr., Felsenweg, Franz-Schmider-Str., Gaisbürde, Gartenstr., Gebelestr., Gerbergasse, Goethestr., Grafenstr., Grieshabergasse, Grünweg, Hansjakobstr., Hauptstr., Hausacher Str., Haydnstr., Hebelstr., Herrenberg, Hofstetter Str., Holderweg, Horst-Prinzbach-Str., Im Brühl, Im kleinen Grünle, Im Mühlegrün, Im Spießacker, Im Stricker, In der Frühmeß, In der Hornmatt, In der Sägmatt, In der Schmelze, In der Zillmatt, Innerer Graben, Josef-Rau-Str., Julius-Allgeyer-Str., Kampfackerstr., Kapellenweg, Kinzigstr., Kirchgasse, Klosterstr., Kolpingstr., Königsberger Str., Leimengrubweg, Lindenstr., Lippstr., Ludwig-Blum-Str., Metzgergasse, Mozartstr., Mühlbachweg, Mühlenbacher Str., Mühlenstr., Mülldeponie Vulkan, Neue Eisenbahnstr., Neuer Bergweg, Neumatt, Niederhofenweg, Otto-Göller-Str., Otto-Laible-Str., Pfarrer-Albrecht-Str., Pfarrer-Vetter-Str., Pfarrgasse, Richard-Wagner-Str., Ringstr., Rotkreuzstr., Rudolfstr., Sägerstr., Sandhaasenhalde, Sandhaasstr., Schillerstr., Schlattstr., Schleifmattstr., Schnellinger Str., Schubertstr., Schulstr., Schwarzwaldstr., Seilerstr., Siedlerstr., Silberbergweg, Simon-Fink-Str., Sommerhaldenweg, Steinacher Str., Strickerweg, Talstr., Tannenstr., Waldseeweg, Waldstr., Weiherdamm, Weihermatt, Wilhelm-Engelberg-Str., Wolfgäßle, Xaver-Hättich-Str., Ziegelhütte])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheStreetsForAGivenPostcode(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-U...)">
+                  </a> <!-- findTheStreetsForAGivenPostcode(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-U...) -->
+                  <span class="method-name">findTheStreetsForAGivenPostcode</span>
+                  <span class="parameters">(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-Ullmann-Weg, Gemsbühl, Goetheweg, Hansjakobstr., Hauptstr., Herrenberg, Hintertal, Im Katzengraben, Im Wiesengrün, Karl-May-Weg, Kinzigstr., Kirchweg, Martinshof, Mitteltal, Obere Klinge, Pfarrer-Strittmatter-Weg, Rebgartenstr., Reichenbergstr., Schillerweg, Sonnenmatte, Sportplatz, Trottmatten, Turm, Untere Klinge, Vordertal, Waldstein, Wiesenrain])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheStreetsForAGivenPostcode(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breit...)">
+                  </a> <!-- findTheStreetsForAGivenPostcode(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breit...) -->
+                  <span class="method-name">findTheStreetsForAGivenPostcode</span>
+                  <span class="parameters">(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breitebene, Brunnacker, Bühlstr., Dorfwiesen, Eugen-Klausner-Str., Friedhofstr., Georg-Giesler-Str., Georg-Neumaier-Str., Haldestr., Hansjakobstr., Hauptstr., Heidburg, Helgenrain, Im Reble, Im Schneiben, Kapellenweg, Kirchacker, Kreuzstr., Lachen, Lindengarten, Mattenmühle, Mittelweiler, Mühlenmatten, Munde, Oberdorf, Salmensbach, Schluchstr., Schulstr., Senkmatt, Ullerst, Unterdorf, Unterer Fellberg, Waldseeweg, Weißer Brunnen])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findTheStreetsForAGivenPostcode(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Gre...)">
+                  </a> <!-- findTheStreetsForAGivenPostcode(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Gre...) -->
+                  <span class="method-name">findTheStreetsForAGivenPostcode</span>
+                  <span class="parameters">(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Greifswalder Str., Grellstr., Gubitzstr., Gürtelstr., Hanns-Eisler-Str., Hosemannstr., Küselstr., Lindenhoekweg, Mandelstr., Michelangelostr., Naugarder Str., Ostseeplatz, Ostseestr., Paul-Grasse-Str., Pieskower Weg, Prenzlauer Allee, Preußstr., Rietzestr., Schieritzstr., Sodtkestr., Storkower Str., Sültstr., Thomas-Mann-Str., Trachtenbrodtstr.])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/risaini/Introduction/E2EProject/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;verivox.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Validating Scenario 1 and 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;verivox.HomePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Scenario 1 and 2 --&gt;
+  &lt;test name=&quot;Validating Scenario 3 &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;verivox.StreetsCheck&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Scenario 3  --&gt;
+  &lt;test name=&quot;Validating Scenario 4 &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;verivox.AddressChecks&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Scenario 4  --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Validating Scenario 1 and 2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Scenario 3  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Scenario 4  (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loadMultipleTariffResultPages')
+data.setCell(0, 2, 'verivox.HomePage')
+data.setCell(0, 3, 22646);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTheDslCalculator')
+data.setCell(1, 2, 'verivox.HomePage')
+data.setCell(1, 3, 13350);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'findTheStreetsForAGivenPostcode')
+data.setCell(2, 2, 'verivox.StreetsCheck')
+data.setCell(2, 3, 1639);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'findTheStreetsForAGivenPostcode')
+data.setCell(3, 2, 'verivox.StreetsCheck')
+data.setCell(3, 3, 347);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'findTheCitiesForAGivenPostcode')
+data.setCell(4, 2, 'verivox.AddressChecks')
+data.setCell(4, 3, 343);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'findTheCitiesForAGivenPostcode')
+data.setCell(5, 2, 'verivox.AddressChecks')
+data.setCell(5, 3, 336);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findTheStreetsForAGivenPostcode')
+data.setCell(6, 2, 'verivox.StreetsCheck')
+data.setCell(6, 3, 335);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'findTheStreetsForAGivenPostcode')
+data.setCell(7, 2, 'verivox.StreetsCheck')
+data.setCell(7, 3, 270);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">verivox.HomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheDslCalculator</span>
+                <span class="method-start">2885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loadMultipleTariffResultPages</span>
+                <span class="method-start">16237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">38883 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">verivox.StreetsCheck</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">findTheStreetsForAGivenPostcode(10409/Berlin/Streets, [Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Gre...)</span>
+                <span class="method-start">39297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findTheStreetsForAGivenPostcode(77716/Fischerbach/Streets, [Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-U...)</span>
+                <span class="method-start">40936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findTheStreetsForAGivenPostcode(77716/Hofstetten/Streets, [Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breit...)</span>
+                <span class="method-start">41272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findTheStreetsForAGivenPostcode(77716/Haslach/Streets, [Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str....)</span>
+                <span class="method-start">41542 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">verivox.AddressChecks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">findTheCitiesForAGivenPostcode(10409, [Berlin])</span>
+                <span class="method-start">41899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findTheCitiesForAGivenPostcode(77716, [Fischerbach, Haslach, Hofstetten])</span>
+                <span class="method-start">42235 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

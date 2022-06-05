@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="verivox.Listeners"/>
+	</listeners>
+	<test name= "Validating Scenario 1 and 2" >
+		<classes>
+			<class name="verivox.HomePage"/>
+		</classes>
+	</test>
+	<test name="Validating Scenario 3 ">
+		<classes>
+			<class name="verivox.StreetsCheck"/>
+		</classes>
+	</test>
+	<test name="Validating Scenario 4 ">
+		<classes>
+			<class name="verivox.AddressChecks"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-05T19:58:03Z" name="Suite" finished-at="2022-06-05T19:58:45Z" duration-ms="42579">
+    <groups>
+    </groups>
+    <test started-at="2022-06-05T19:58:03Z" name="Validating Scenario 1 and 2" finished-at="2022-06-05T19:58:42Z" duration-ms="39008">
+      <class name="verivox.HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:verivox.HomePage@3688eb5b]" started-at="2022-06-06T01:28:03Z" name="initialize" finished-at="2022-06-06T01:28:06Z" duration-ms="2880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyTheDslCalculator()[pri:0, instance:verivox.HomePage@3688eb5b]" started-at="2022-06-06T01:28:06Z" name="verifyTheDslCalculator" finished-at="2022-06-06T01:28:19Z" duration-ms="13350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheDslCalculator -->
+        <test-method signature="loadMultipleTariffResultPages()[pri:0, instance:verivox.HomePage@3688eb5b]" started-at="2022-06-06T01:28:19Z" name="loadMultipleTariffResultPages" finished-at="2022-06-06T01:28:42Z" depends-on-methods="verivox.HomePage.verifyTheDslCalculator" duration-ms="22646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadMultipleTariffResultPages -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:verivox.HomePage@3688eb5b]" started-at="2022-06-06T01:28:42Z" name="teardown" finished-at="2022-06-06T01:28:42Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- verivox.HomePage -->
+    </test> <!-- Validating Scenario 1 and 2 -->
+    <test started-at="2022-06-05T19:58:42Z" name="Validating Scenario 3 " finished-at="2022-06-05T19:58:45Z" duration-ms="2595">
+      <class name="verivox.StreetsCheck">
+        <test-method signature="findTheStreetsForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.StreetsCheck@3e6104fc]" started-at="2022-06-06T01:28:42Z" name="findTheStreetsForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:44Z" duration-ms="1639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10409/Berlin/Streets]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Cohnstr., Einsteinstr., Erich-Weinert-Str., Georg-Blank-Str., Goethestr., Greifswalder Str., Grellstr., Gubitzstr., Gürtelstr., Hanns-Eisler-Str., Hosemannstr., Küselstr., Lindenhoekweg, Mandelstr., Michelangelostr., Naugarder Str., Ostseeplatz, Ostseestr., Paul-Grasse-Str., Pieskower Weg, Prenzlauer Allee, Preußstr., Rietzestr., Schieritzstr., Sodtkestr., Storkower Str., Sültstr., Thomas-Mann-Str., Trachtenbrodtstr.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheStreetsForAGivenPostcode -->
+        <test-method signature="findTheStreetsForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.StreetsCheck@3e6104fc]" started-at="2022-06-06T01:28:44Z" name="findTheStreetsForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:44Z" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[77716/Fischerbach/Streets]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Am Höfle, Bergstr., Ellengrund, Ellmattenstr., Eschau, Eschbach, Fritz-Ullmann-Weg, Gemsbühl, Goetheweg, Hansjakobstr., Hauptstr., Herrenberg, Hintertal, Im Katzengraben, Im Wiesengrün, Karl-May-Weg, Kinzigstr., Kirchweg, Martinshof, Mitteltal, Obere Klinge, Pfarrer-Strittmatter-Weg, Rebgartenstr., Reichenbergstr., Schillerweg, Sonnenmatte, Sportplatz, Trottmatten, Turm, Untere Klinge, Vordertal, Waldstein, Wiesenrain]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheStreetsForAGivenPostcode -->
+        <test-method signature="findTheStreetsForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.StreetsCheck@3e6104fc]" started-at="2022-06-06T01:28:44Z" name="findTheStreetsForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:44Z" duration-ms="270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[77716/Hofstetten/Streets]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Alter Weg, Altersbach, Am Schneitbach, Auf der Rot, Bannmatt, Berg, Breitebene, Brunnacker, Bühlstr., Dorfwiesen, Eugen-Klausner-Str., Friedhofstr., Georg-Giesler-Str., Georg-Neumaier-Str., Haldestr., Hansjakobstr., Hauptstr., Heidburg, Helgenrain, Im Reble, Im Schneiben, Kapellenweg, Kirchacker, Kreuzstr., Lachen, Lindengarten, Mattenmühle, Mittelweiler, Mühlenmatten, Munde, Oberdorf, Salmensbach, Schluchstr., Schulstr., Senkmatt, Ullerst, Unterdorf, Unterer Fellberg, Waldseeweg, Weißer Brunnen]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheStreetsForAGivenPostcode -->
+        <test-method signature="findTheStreetsForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.StreetsCheck@3e6104fc]" started-at="2022-06-06T01:28:44Z" name="findTheStreetsForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:45Z" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[77716/Haslach/Streets]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ahornstr., Allmendgasse, Allmendweg, Alte Eisenbahnstr., Alte Hausacher Str., Am Dorfbach, Am Gewerbekanal, Am Helgenberg, Am Marktplatz, Am Mühlbach, Am Schafsteg, Am Schänzle, Am Schloßberg, Am Sonnenrain, Am Spielplatz, Bachgasse, Bächlewaldweg, Baumeisterstr., Beethovenstr., Bergstr., Birkenstr., Bohnackerstr., Bollenbacher Str., Breitestr., Bruno-Lenz-Str., Buchenstr., Dorfstr., Dr.-Kempf-Str., Eichenbachstr., Eichenweg, Engelstr., Felsenweg, Franz-Schmider-Str., Gaisbürde, Gartenstr., Gebelestr., Gerbergasse, Goethestr., Grafenstr., Grieshabergasse, Grünweg, Hansjakobstr., Hauptstr., Hausacher Str., Haydnstr., Hebelstr., Herrenberg, Hofstetter Str., Holderweg, Horst-Prinzbach-Str., Im Brühl, Im kleinen Grünle, Im Mühlegrün, Im Spießacker, Im Stricker, In der Frühmeß, In der Hornmatt, In der Sägmatt, In der Schmelze, In der Zillmatt, Innerer Graben, Josef-Rau-Str., Julius-Allgeyer-Str., Kampfackerstr., Kapellenweg, Kinzigstr., Kirchgasse, Klosterstr., Kolpingstr., Königsberger Str., Leimengrubweg, Lindenstr., Lippstr., Ludwig-Blum-Str., Metzgergasse, Mozartstr., Mühlbachweg, Mühlenbacher Str., Mühlenstr., Mülldeponie Vulkan, Neue Eisenbahnstr., Neuer Bergweg, Neumatt, Niederhofenweg, Otto-Göller-Str., Otto-Laible-Str., Pfarrer-Albrecht-Str., Pfarrer-Vetter-Str., Pfarrgasse, Richard-Wagner-Str., Ringstr., Rotkreuzstr., Rudolfstr., Sägerstr., Sandhaasenhalde, Sandhaasstr., Schillerstr., Schlattstr., Schleifmattstr., Schnellinger Str., Schubertstr., Schulstr., Schwarzwaldstr., Seilerstr., Siedlerstr., Silberbergweg, Simon-Fink-Str., Sommerhaldenweg, Steinacher Str., Strickerweg, Talstr., Tannenstr., Waldseeweg, Waldstr., Weiherdamm, Weihermatt, Wilhelm-Engelberg-Str., Wolfgäßle, Xaver-Hättich-Str., Ziegelhütte]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheStreetsForAGivenPostcode -->
+      </class> <!-- verivox.StreetsCheck -->
+    </test> <!-- Validating Scenario 3  -->
+    <test started-at="2022-06-05T19:58:45Z" name="Validating Scenario 4 " finished-at="2022-06-05T19:58:45Z" duration-ms="679">
+      <class name="verivox.AddressChecks">
+        <test-method signature="findTheCitiesForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.AddressChecks@68702e03]" started-at="2022-06-06T01:28:45Z" name="findTheCitiesForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:45Z" duration-ms="336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10409]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Berlin]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheCitiesForAGivenPostcode -->
+        <test-method signature="findTheCitiesForAGivenPostcode(java.lang.String, java.lang.String)[pri:0, instance:verivox.AddressChecks@68702e03]" started-at="2022-06-06T01:28:45Z" name="findTheCitiesForAGivenPostcode" data-provider="getInputData" finished-at="2022-06-06T01:28:45Z" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[77716]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Fischerbach, Haslach, Hofstetten]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTheCitiesForAGivenPostcode -->
+      </class> <!-- verivox.AddressChecks -->
+    </test> <!-- Validating Scenario 4  -->
+  </suite> <!-- Suite -->
+</testng-results>

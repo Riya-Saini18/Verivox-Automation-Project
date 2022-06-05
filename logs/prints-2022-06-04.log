@@ -1,0 +1,5 @@
+21:16:42.667 [main] INFO  resources.base - returning street names with special characters and dashes displayed correctly
+21:16:42.668 [main] INFO  resources.base - Verified the streets for each of the postcode 77716 cities
+21:16:43.160 [main] INFO  resources.base - returns a list of cities (even for a single city)
+21:16:43.161 [main] INFO  resources.base - Verified the 2 postcode cases with a parameterized test instead of 2 separate tests
+21:16:43.495 [main] INFO  resources.base - returns a list of cities (even for a single city)
